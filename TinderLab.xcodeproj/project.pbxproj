@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F64F606D2059E5A8000B87C8 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64F606C2059E5A8000B87C8 /* CardsViewController.swift */; };
 		F6B26F172059E013006E901D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B26F162059E013006E901D /* AppDelegate.swift */; };
 		F6B26F192059E013006E901D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B26F182059E013006E901D /* ViewController.swift */; };
 		F6B26F1C2059E013006E901D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B26F1A2059E013006E901D /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F64F606C2059E5A8000B87C8 /* CardsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		F6B26F132059E013006E901D /* TinderLab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderLab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B26F162059E013006E901D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6B26F182059E013006E901D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +76,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F64F606A2059E4FA000B87C8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F64F606C2059E5A8000B87C8 /* CardsViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		F64F606B2059E518000B87C8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		F6B26F0A2059E013006E901D = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +114,8 @@
 		F6B26F152059E013006E901D /* TinderLab */ = {
 			isa = PBXGroup;
 			children = (
+				F64F606B2059E518000B87C8 /* View */,
+				F64F606A2059E4FA000B87C8 /* ViewController */,
 				F6B26F162059E013006E901D /* AppDelegate.swift */,
 				F6B26F182059E013006E901D /* ViewController.swift */,
 				F6B26F1A2059E013006E901D /* Main.storyboard */,
@@ -261,6 +280,7 @@
 			files = (
 				F6B26F192059E013006E901D /* ViewController.swift in Sources */,
 				F6B26F172059E013006E901D /* AppDelegate.swift in Sources */,
+				F64F606D2059E5A8000B87C8 /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +525,7 @@
 				F6B26F3D2059E013006E901D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6B26F3E2059E013006E901D /* Build configuration list for PBXNativeTarget "TinderLabTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +534,7 @@
 				F6B26F402059E013006E901D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F6B26F412059E013006E901D /* Build configuration list for PBXNativeTarget "TinderLabUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +543,7 @@
 				F6B26F432059E013006E901D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
