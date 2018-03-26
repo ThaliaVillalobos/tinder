@@ -36,15 +36,24 @@ class CardsViewController: UIViewController {
             cardView.center = CGPoint(x: cardInitialCenter.x + translation.x, y: cardInitialCenter.y )
             if xFromCenter > 0 {
                 cardView.transform = CGAffineTransform(rotationAngle: CGFloat(Double(xFromCenter) * Double.pi / 360))
-                print(translation.x)
             }else{
                 cardView.transform = CGAffineTransform(rotationAngle: CGFloat(Double(xFromCenter) * Double.pi / 360))
-                print(xFromCenter)
-
             }
-            
+            print(cardView.center.x)
             print("Gesture is changing")
         } else if sender.state == .ended {
+            
+            if cardView.center.x < 75 {
+                UIView.animate(withDuration: 0.3, animations: { 
+                    self.cardView.center = CGPoint(x: self.cardView.center.x - 200, y: self.cardView.center.y + 75)
+                    self.cardView.alpha = 0
+                })
+            } else if cardView.center.x > (view.frame.width - 75) {
+                UIView.animate(withDuration: 0.3, animations: {
+                    self.cardView.center = CGPoint(x: self.cardView.center.x + 200, y: self.cardView.center.y + 75)
+                    self.cardView.alpha = 0
+                })
+            }
             print("Gesture ended")
         }
     }
