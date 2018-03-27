@@ -57,5 +57,20 @@ class CardsViewController: UIViewController {
             print("Gesture ended")
         }
     }
+    
+   
+    @IBAction func onImageTap(_ sender: Any) {
+        performSegue(withIdentifier: "imageTap", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "imageTap" {
+            print("About to image")
+            let profileViewController = segue.destination as! ProfileViewController
+            profileViewController.newImage = cardView.image
+        }
+    }
 
+    
+    
 }
